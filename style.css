@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 0, 51);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* LEFT CONTAINER */
+.left_container {
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: #6113ab;
+}
+
+.left_container_inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left_container img {
+    width: 300px;
+}
+
+.left_container_inner h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.left_container_inner div p {
+    font-size: 15px;
+    width: 40%;
+}
+
+.left_container_text_3 {
+    padding-right: 40px;
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_container_text_3 span {
+    font-size: 20px;
+}
+
+#abc{
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.a{
+    /* display: block; */
+    width: fit-content;
+}
+
+.mid_container {
+    width: 45vh;
+    height: 45vh;
+    position: fixed;
+    top: 10%;
+    left: 40%;
+    transform: translate(-40%, -10%);
+    z-index: 10;
+    border-radius: 100%;
+    background-color: #6113ab;
+}
+
+.mid_container img {
+    width: 100%;
+    height: 100%;
+}
+
+.circle_text {
+    position: fixed;
+    top: 22%;
+    left: 25%;
+    transform: translate(-40%, -10%);
+    z-index: 12;
+}
+
+.circle_text h1 {
+    font-size: 60px;
+}
+
+.circle_text p{
+    width: 100%;
+    text-align: end;
+}
+
+.right_container {
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #ccccce;
+}
+
+/* ----------- PIC 1 */
+.pic1_1 {
+    width: 38%;
+}
+
+.pic1_2 {
+    width: 38%;
+}
+
+/* ----------- PIC 2 */
+.pic2_1 {
+    width: 30%;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+}
+
+.pic2_2 {
+    width: 30%;
+    position: absolute;
+    top: -15%;
+    right: 10%;
+}
+
+
+/* ----------- PIC 3 */
+.pic3_1 {
+    width: 40%;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+}
+
+.pic3_2 {
+    width: 30%;
+    position: absolute;
+    top: -18%;
+    right: 10%;
+}
+
+/* ------------ PIC 4         */
+.pic4 {
+    position: absolute;
+}
+
+.pic4_1 {
+    top: 0;
+    left: 0;
+}
+
+.pic4_2 {
+    top: -20%;
+    right: 0;
+}
+
+.pic4_3 {
+    width: 25%;
+    top: 10%;
+    right: 10%;
+}
+
+.pic4_4 {
+    width: 25%;
+    bottom: 0%;
+    left: 30%;
+}
+
+.pic4_5 {
+    width: 25%;
+    bottom: -5%;
+    right: -2%;
+}
+
+
+/* ------------ PIC 5         */
+.pic5 {
+    position: absolute;
+}
+
+.pic5_1 {
+    width: 25%;
+    top: -20%;
+    left: 20%;
+}
+
+.pic5_2 {
+    width: 25%;
+    top: -10%;
+    left: 50%;
+}
+
+.pic5_3 {
+    width: 25%;
+    top: 30%;
+    right: 0%;
+}
+
+.pic5_4 {
+    width: 25%;
+    bottom: -18%;
+    left: 20%;
+}
+
+.pic5_5 {
+    width: 25%;
+    bottom: -30%;
+    left: 50%;
+}
+
+/*  PIC 6 ------------- */
+.pic6_1 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*  PIC 7 ------------- */
+.pic7 {
+    position: absolute;
+}
+
+.pic7_1 {
+    width: 40%;
+    bottom: -10%;
+    left: 30%;
+}
+
+.pic7_2 {
+    width: 30%;
+    bottom: -5%;
+    left: 58%;
+}
