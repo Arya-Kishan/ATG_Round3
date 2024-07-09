@@ -5,8 +5,8 @@ gsap.registerPlugin(TextPlugin)
 let t1 = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
-        start: "500% 500%",
-        end: "500% 10%",
+        start: "400% 400%",
+        end: "400% 10%",
         pin: true,
         scrub: 2,
         markers: true,
