@@ -1,13 +1,14 @@
-gsap.registerPlugin(ScrollTrigger, TextPlugin)
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(TextPlugin)
 
 
 let t1 = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
-        start: "90% 90%",
-        end: "90% 10%",
+        start: "500% 500%",
+        end: "500% 10%",
         pin: true,
-        scrub: true,
+        scrub: 2,
         markers: true,
     }
 })
@@ -16,8 +17,37 @@ t1.to(".pic1_1,.pic1_2", {
     y: "120%",
 }, "a")
 
+t1.to(".case", {
+    scale: 0.2,
+}, "a")
+
+t1.set(".case", {
+    text: "coming soon"
+}, "b")
+
 
 // PIC 2 ----------------
+t1.to(".scroll1", {
+    y: "-28px"
+}, "b")
+t1.to(".scroll2", {
+    y: "-90px"
+}, "b")
+t1.to(".scroll3", {
+    y: "-24px"
+}, "b")
+t1.to(".abc_inner", {
+    y: "-75px"
+}, "b")
+
+t1.to(".left_container_text_2_1_inner,.left_container_text_2_2_inner,.left_container_text_2_3_inner", {
+    y: "-23px"
+}, "b")
+
+t1.to(".case", {
+    scale: 1
+}, "b")
+
 t1.to(".mid_container", {
     backgroundColor: "#4d27cd",
 }, "b")
@@ -36,6 +66,10 @@ t1.from(".pic2_2", {
     top: "-100%",
 }, "b")
 
+t1.to(".logo_inner", {
+    opacity: 0,
+}, "b")
+
 t1.to(".pic2_1", {
     bottom: "-100%",
 }, "c")
@@ -44,8 +78,37 @@ t1.to(".pic2_2", {
     top: "-100%",
 }, "c")
 
+t1.to(".case", {
+    scale: 0.2
+}, "c")
+
 
 // PIC 3 ----------------
+t1.to(".scroll1", {
+    y: "-56px"
+}, "d")
+t1.to(".scroll2", {
+    y: "-180px"
+}, "d")
+t1.to(".scroll3", {
+    y: "-48px"
+}, "d")
+t1.to(".abc_inner", {
+    y: "-150px"
+}, "d")
+
+t1.to(".left_container_text_2_1_inner,.left_container_text_2_2_inner,.left_container_text_2_3_inner", {
+    y: "-46px"
+}, "d")
+
+t1.to(".case", {
+    scale: 1
+}, "d")
+
+t1.set(".case", {
+    text: "view case study"
+}, "d")
+
 t1.to(".mid_container", {
     backgroundColor: "#0d1039",
 }, "d")
@@ -71,7 +134,31 @@ t1.to(".pic3_2", {
     top: "-100%",
 }, "e")
 
-// PIC 4 ----------------
+t1.to(".case", {
+    scale: 0.2
+}, "e")
+
+// PIC 4 -------------------------------------
+t1.to(".scroll1", {
+    y: "-84px"
+}, "f")
+t1.to(".scroll2", {
+    y: "-270px"
+}, "f")
+t1.to(".scroll3", {
+    y: "-72px"
+}, "f")
+t1.to(".abc_inner", {
+    y: "-225px"
+}, "f")
+t1.to(".left_container_text_2_1_inner,.left_container_text_2_2_inner,.left_container_text_2_3_inner", {
+    y: "-69px"
+}, "f")
+
+t1.to(".case", {
+    scale: 1
+}, "f")
+
 t1.to(".mid_container", {
     backgroundColor: "#16263b",
 }, "f")
@@ -127,9 +214,34 @@ t1.to(".pic4_5", {
     right: '-100%'
 }, "g")
 
+t1.to(".case", {
+    scale: 0.2
+}, "g")
 
 
-// PIC 5 ----------------
+
+// PIC 5 ----------------------------
+t1.to(".scroll1", {
+    y: "-112px"
+}, "h")
+t1.to(".scroll2", {
+    y: "-360px"
+}, "h")
+t1.to(".scroll3", {
+    y: "-96px"
+}, "h")
+t1.to(".abc_inner", {
+    y: "-300px"
+}, "h")
+
+t1.to(".left_container_text_2_1_inner,.left_container_text_2_2_inner,.left_container_text_2_3_inner", {
+    y: "-92px"
+}, "h")
+
+t1.to(".case", {
+    scale: 1
+}, "h")
+
 t1.to(".mid_container", {
     backgroundColor: "#124ca1",
 }, "h")
@@ -181,9 +293,34 @@ t1.to(".pic5_5", {
     bottom: "-100%",
 }, "i")
 
+t1.to(".case", {
+    scale: 0.2
+}, "i")
 
 
-// PIC 6 ----------------
+
+// PIC 6 -------------------------------
+t1.to(".scroll1", {
+    y: "-140px"
+}, "j")
+t1.to(".scroll2", {
+    y: "-450px"
+}, "j")
+t1.to(".scroll3", {
+    y: "-120px"
+}, "j")
+t1.to(".abc_inner", {
+    y: "-375px"
+}, "j")
+
+t1.to(".left_container_text_2_1_inner,.left_container_text_2_2_inner,.left_container_text_2_3_inner", {
+    y: "-115px"
+}, "j")
+
+t1.to(".case", {
+    scale: 1
+}, "j")
+
 t1.to(".mid_container", {
     backgroundColor: "#012a8b",
 }, "j")
@@ -204,11 +341,39 @@ t1.to(".pic6_1", {
     y: "50%"
 }, "k")
 
+t1.to(".case", {
+    scale: 0.2
+}, "k")
+
+t1.to(".logo_inner", {
+    y: "-90px",
+}, "k")
 
 
 
 
-// PIC 7 ----------------
+
+// PIC 7 ------------------------------
+t1.to(".scroll1", {
+    y: "-168px"
+}, "l")
+t1.to(".scroll2", {
+    y: "-540px"
+}, "l")
+t1.to(".scroll3", {
+    y: "-144px"
+}, "l")
+t1.to(".abc_inner", {
+    y: "-450px"
+}, "l")
+t1.to(".left_container_text_2_1_inner,.left_container_text_2_2_inner,.left_container_text_2_3_inner", {
+    y: "-138px"
+}, "l")
+
+t1.to(".case", {
+    scale: 1
+}, "a")
+
 t1.to(".mid_container", {
     backgroundColor: "#007d49",
 }, "l")
@@ -226,17 +391,18 @@ t1.from(".pic7_2", {
     bottom: "-100%",
 }, "l")
 
+t1.to(".case", {
+    scale: 1
+}, "l")
 
-let word = document.querySelector("#abc");
-word.innerHTML = word.innerText.split(" ").map(e => {
-    return `<span class="a"><b>${e}</b></span>`
-}).join(" ");
+t1.set(".case", {
+    text: "coming soon"
+}, "l")
 
-gsap.from("#abc span", {
-    opacity: 0,
-    duration: 1,
-    y: 100,
-    ease: "back.out(1.7)",
-    stagger: 0.05,
-    backgroundColor: 'red'
-})
+t1.to(".logo", {
+    height: "100px",
+}, "l")
+
+t1.to(".logo_inner", {
+    opacity: 1,
+}, "l")

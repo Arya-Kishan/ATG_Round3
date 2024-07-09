@@ -63,15 +63,21 @@ body {
     font-size: 20px;
 }
 
-#abc{
-    display: flex;
-    gap: 15px;
-    overflow: hidden;
+.logo{
+    height: 92px;
+    overflow: scroll;
 }
 
-.a{
-    /* display: block; */
-    width: fit-content;
+.abc {
+    height: 75px;
+    overflow: scroll;
+}
+
+.left_container_text_2_1,
+.left_container_text_2_2,
+.left_container_text_2_3 {
+    height: 23px;
+    overflow: scroll;
 }
 
 .mid_container {
@@ -96,6 +102,8 @@ body {
     top: 22%;
     left: 25%;
     transform: translate(-40%, -10%);
+    display: flex;
+    flex-direction: column;
     z-index: 12;
 }
 
@@ -103,10 +111,26 @@ body {
     font-size: 60px;
 }
 
-.circle_text p{
+.circle_text p {
     width: 100%;
     text-align: end;
 }
+
+.main_head1 {
+    height: 28px;
+    overflow: scroll;
+}
+
+.main_head2 {
+    height: 90px;
+    overflow: scroll;
+}
+
+.main_head3 {
+    height: 24px;
+    overflow: scroll;
+}
+
 
 .right_container {
     width: 55%;
